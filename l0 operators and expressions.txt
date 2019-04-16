@@ -1,0 +1,167 @@
+session 1 operators and expressions 
+
+q2
+
+
+import java.util.*;
+
+import java.text.*;
+
+class Main
+{
+  
+  public static void main(String as[])
+ 
+   {
+        Scanner sc=new Scanner(System.in);
+   
+     float a,b,c;
+      
+  a=sc.nextFloat();
+      
+  b=sc.nextFloat();
+        
+DecimalFormat df=new DecimalFormat("#.00");
+ 
+       c=((a*10)+(b*40))/50;
+     
+   System.out.println(df.format(c));
+   
+ }
+
+}
+
+q4
+
+import java.util.*;
+class Main
+{
+    public static void main(String as[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int a,b,c;
+        a=sc.nextInt();
+        b=a/11;
+        c=a%11;
+        System.out.println(b+"\n"+c);
+    }
+}
+
+q5
+import java.util.*;
+class Main
+{
+    public static void main(String as[])
+    {
+        int n,a,b,t,e,f;
+        Scanner sc=new Scanner(System.in);
+        n=sc.nextInt();
+        a=sc.nextInt();
+        b=sc.nextInt();
+        t=sc.nextInt();
+        e=((n*a)-t)/(a-b);
+        f=n-e;
+        System.out.println(f+"\n"+e);
+    }
+}
+
+q6
+
+import java.util.*;
+class Main
+{
+    public static void main(String as[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int a,b,c;
+        a=sc.nextInt();
+        b=a-5;
+        c=b/4;
+        System.out.println(c);
+    }
+}
+
+q7
+
+import java.util.*;
+import java.text.*;
+import java.math.*;
+class Main
+{
+    public static void main(String as[])
+    {
+        Scanner sc=new Scanner(System.in);
+        float a,b;
+        float b1,f,k;
+        a=sc.nextFloat();
+        b=sc.nextFloat();
+        f=sc.nextFloat();
+        k=(a*f*30)/b;
+        DecimalFormat df=new DecimalFormat("#0.00");
+        System.out.println(df.format(k));
+    }
+}
+
+q8
+import java.util.*;
+import java.text.*;
+class Main
+{
+    public static void main(String as[])
+    {
+        Scanner asa=new Scanner(System.in);
+        Float a,b,c,e;
+        String d;
+        float k,l,m;
+        a= asa.nextFloat();
+        b= asa.nextFloat();
+        c= asa.nextFloat();
+        e=a+b+c;
+        d=" ";
+        k=(a*100)/e;
+        l=(b*100)/e;
+        m=(c*100)/e;
+        DecimalFormat df=new DecimalFormat("#0.00");
+        System.out.println(df.format(k)+" "+df.format(l)+" "+df.format(m));
+    }
+}
+
+q9
+
+import java.util.*;
+import java.text.*;
+class Main
+{
+    public static void main(String as[])
+    {
+        Scanner sc=new Scanner(System.in);
+        float a,b;
+        Float k,c,d;
+        a=sc.nextFloat();
+        b=sc.nextFloat();
+        k=a*3;
+        c=b*2;
+        d=k+c;
+        DecimalFormat df=new DecimalFormat("#0.00");
+        System.out.println(df.format(d));
+        
+    }
+}
+
+q10
+
+import java.util.*;
+class Main
+{
+    public static void main(String as[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int a,b;
+        a=sc.nextInt();
+        b=(a-10)/3;
+        System.out.println(b+"\n"+b+"\n"+(b+10));
+        
+    }
+}
+
+

@@ -1,0 +1,548 @@
+arrays additional session1
+
+import java.util.*;
+public class Main{
+    public static void main(String args[]){ 
+        int n,m,i;
+        Scanner sc=new Scanner(System.in);
+        n=sc.nextInt(); 
+if(n<0){
+    System.out.println("Invalid Input");
+    System.exit(1);
+    }
+    int a[]=new int[n]; 
+    for(i=0;i<n;i++) { 
+a[i]=sc.nextInt();
+if(a[i]<0){
+    System.out.println("Invalid Input");
+    System.exit(1); 
+    
+} 
+}
+m=sc.nextInt();
+if(m<0){ System.out.println("Invalid Input");
+System.exit(1);
+}
+
+int b[]=new int[m];
+for(i=0;i<m;i++)
+{
+    b[i]=sc.nextInt(); 
+    if(b[i]<0){ 
+        System.out.println("Invalid Input");
+    System.exit(1); 
+} 
+}
+int k=n+m;
+int p[]=new int[k];
+for(i=0;i<k;i++){
+    if(i<n) p[i]=a[i];
+    else p[i]=b[i-n];
+    }
+    Arrays.sort(p);
+    for(i=0;i<k;i++){
+        System.out.println(p[i]); } }}
+
+import java.util.*;
+public class Main{ 
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        if(n<0) {
+            System.out.println("Invalid Input");
+            System.exit(0);
+            }
+            float[] arr=new float[n];
+            float avg=0.0f;
+            for(int i=0;i<n;i++)
+            { 
+arr[i]=sc.nextFloat();
+if(arr[i]<0) { 
+    System.out.println("Invalid Input");
+    System.exit(0);
+    } 
+}
+float sum=0; 
+for(int i=0;i<n;i++) { 
+    sum+=arr[i];
+    }
+    avg=sum/n;
+    System.out.println(avg); }}
+
+import java.util.*; 
+public class Main{ 
+    public static void main(String args[]) { 
+int n,i; 
+float m;
+Scanner sc=new Scanner(System.in); 
+n=sc.nextInt();
+if(n<0){
+    System.out.println("Invalid Input"); 
+    System.exit(1); 
+    
+} 
+    int a[]=new int[n];
+    for(i=0;i<n;i++){ 
+        a[i]=sc.nextInt();
+        if(a[i]<0){ 
+            System.out.println("Invalid Input");
+            System.exit(1);
+            } 
+}
+Arrays.sort(a);
+if(n%2==0){ 
+    m=(float)(a[n/2]+a[(n/2)-1])/2;
+    System.out.printf("%.1f",m);
+    }
+    else{
+        m =(float)(a[(n-1)/2]);
+                    System.out.printf("%.1f",m); }}}
+
+import java.util.*;
+public class Main{ 
+    public static void main(String args[]){ 
+        int n,i,s=0,x;
+        float avg;
+        Scanner sc=new Scanner(System.in);
+        n=sc.nextInt();
+        if(n<0){ 
+            System.out.println("Invalid Input");
+            System.exit(1);
+            } 
+            int a[]=new int[n]; 
+            for(i=0;i<n-1;i++) 
+            { 
+a[i]=sc.nextInt(); 
+s=s+a[i]; 
+if(a[i]<0){
+    System.out.println("Invalid Input");
+    System.exit(1); 
+    
+} 
+}
+avg=sc.nextFloat(); 
+x=(int)((avg*n)-s);
+System.out.println(x); }}
+
+import java.util.*;
+public class Main{
+    public static void main(String args[]){ 
+        int n,i;
+        Scanner sc=new Scanner(System.in); 
+        n=sc.nextInt();
+        if(n<0){ 
+            System.out.println("Invalid Input");
+            System.exit(1); 
+            
+        } 
+        int a[]=new int[n]; 
+        for(i=0;i<n;i++){
+            a[i]=sc.nextInt();
+            if(a[i]<0){
+                System.out.println("Invalid Input");
+            System.exit(1);
+            } 
+            
+        } 
+        for(i=(n-1);
+        i>=0;i--)
+        {
+            System.out.println(a[i]+" ");
+            
+        }
+        } 
+}
+
+import java.util.*; 
+public class Main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in); 
+        String s1=sc.nextLine();
+        char[] c=s1.toCharArray(); 
+        int count=0;
+        for(int i=0;i<s1.length()-1;i=i+2)
+        {
+            if((c[i]=='M' && c[i+1]=='S')||(c[i]=='S' && c[i+1]=='M')) 
+            continue;
+            else count++; 
+            
+        } 
+        System.out.println(count); 
+} 
+}
+
+import java.util.*;
+public class Main{
+    public static void main(String args[]){ 
+        int n,i; 
+        Scanner sc=new Scanner(System.in);
+        n=sc.nextInt(); 
+        if(n<0){ 
+            System.out.println("Invalid Input"); 
+            System.exit(1);
+            } 
+            int a[]=new int[2*n];
+            for(i=0;i<(2*n);i++){ 
+                a[i]=sc.nextInt();
+                if(a[i]<0){
+                    System.out.println("Invalid Input");
+                    System.exit(1); 
+                    
+            
+} 
+} 
+for(i=0;i<n;i++){ 
+    if(a[i]<a[n+1]){ 
+        System.out.println("No");
+        System.exit(1); 
+        
+    } }
+    System.out.println("Yes"); 
+}}
+
+
+arrays api session 1 
+
+import java.util.*;
+class Main { 
+public static void main(String[] args) { 
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt(); 
+if(n<0)
+{ System.out.println("Invalid Input"); 
+System.exit(1); }
+int k=0,i; 
+int year[]=new int[10];
+int now[]=new int[10];
+for(i=0;i<n;i++) 
+{ year[i]=sc.nextInt();
+if(year[i]<0)
+{ System.out.println("Invalid Input");
+System.exit(1);
+} 
+now[i]=sc.nextInt();
+if(now[i]<0) 
+{ System.out.println("Invalid Input");
+System.exit(1);
+} } 
+int year1=sc.nextInt();
+int max=0;
+for(i=0;i<year.length;i++)
+{ 
+if(year[i]==year1) 
+{ if(max<now[i]) 
+{ max=now[i];
+} } 
+}
+System.out.println(max); 
+}
+}
+
+import java.util.*;
+class Main { 
+public static void main(String args[])
+{ Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int i;
+if(n<0)
+{ System.out.println("Invalid Input");
+System.exit(1); 
+    }
+    String s[]=new String[10];
+    float arr[]=new float[10]; 
+    sc.nextLine();
+    for(i=0;i<n;i++)
+    { s[i]=sc.nextLine();
+    } 
+    for(i=0;i<n;i++)
+    {
+arr[i]=sc.nextFloat(); 
+if(arr[i]<0) 
+{ System.out.println("Invalid Input"); 
+System.exit(1); 
+}
+} 
+sc.nextLine();
+String names=sc.nextLine(); 
+/* for( i=0;i<n;i++) { System.out.println(s[i]+" "+arr[i]); 
+} System.out.println("names : "+names); */ 
+for(i=0;i<s.length;i++)
+{ if(s[i].equals(names))
+{ 
+
+System.out.println(arr[i]); break; 
+}
+}
+}
+}
+
+import java.util.*;
+class Main { 
+public static void main(String[] args) { 
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+if(n<0)
+{ System.out.println("Invalid Input"); 
+System.exit(1); }
+int arr[]=new int[n];
+int i;
+for(i=0;i<n;i++)
+{ arr[i]=sc.nextInt();
+if(arr[i]<0) 
+{ System.out.println("Invalid Input");
+System.exit(1);
+} } 
+Arrays.sort(arr); 
+for(i=0;i<n;i++)
+{ System.out.println(arr[i]);
+}}}
+
+import java.util.*;
+class Main { 
+public static void main(String[] args) { 
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt(); 
+if(n<0)
+{ System.out.println("Invalid Input");
+System.exit(1); 
+}
+float arr[]=new float[n];
+int i;
+for(i=0;i<n;i++) 
+{ 
+arr[i]=sc.nextFloat();
+if(arr[i]<0) 
+{
+System.out.println("Invalid Input");
+System.exit(1); 
+} }
+Arrays.sort(arr);
+for(i=0;i<n;i++) 
+{ System.out.println(arr[i]); } }}
+
+import java.util.*;
+class Main { 
+public static void main(String[] args) 
+{ 
+Scanner sc=new Scanner(System.in); 
+int i;
+String s1=sc.nextLine();
+String s2=sc.nextLine();
+char arr1[]=s1.toCharArray();
+char arr2[]=s2.toCharArray();
+int l1=s1.length();
+int l2=s2.length();
+Arrays.sort(arr1);
+Arrays.sort(arr2);
+for(i=0;i<l1;i++) 
+System.out.print(arr1[i]);
+for(i=l2-1;i>=0;i--)
+System.out.print(arr2[i]); 
+}}
+
+import java.util.*; 
+class Main { 
+public static void main(String[] args) 
+{ 
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int f=0; 
+if(n<0)
+{ System.out.println("Invalid Input");
+System.exit(1); 
+    }
+    int run[]=new int[100];
+    String names[]=new String[100];
+    int i;
+    int index=0;
+    for(i=0;i<n;i++)
+    { 
+sc.nextLine();
+names[i]=sc.nextLine();
+run[i]=sc.nextInt(); 
+if(run[i]<0)
+{ System.out.println("Invalid Input");
+System.exit(1);
+} 
+}
+for(i=0;i<run.length;i++)
+{ if(run[i]==183)
+{ f=1; index=i; 
+    } } 
+    if(f==1)
+    { System.out.println(names[index]);
+    } 
+    else { 
+System.out.println("None");}}}
+
+
+arrays ap1 session2
+
+import java.util.*;
+public class Main{ 
+    public static void main(String args[]){
+        int i,flag=0; 
+        int a[]=new int[4]; 
+        int b[]=new int[4];
+        Scanner sc=new Scanner(System.in);
+        for(i=0;i<4;i++)
+        { a[i]=sc.nextInt();
+        if(a[1]<0)
+        { System.out.println("Invalid Input");
+        System.exit(1);
+        } } 
+        for(i=0;i<4;i++)
+        { b[i]=sc.nextInt();
+        if(b[i]<0){
+            System.out.println("Invalid Input");
+            System.exit(1);
+            } 
+} 
+
+for(i=0;i<4;i++){
+    if(a[i]!=b[i]){
+        System.out.println("Different"); 
+        flag=1; break; } } 
+        if(flag==0)
+        System.out.println("Same"); }}
+
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        int n,i;
+        Scanner sc=new Scanner(System.in);
+        n=sc.nextInt();
+        if(n<0){
+            System.out.println("Invalid Input"); 
+            System.exit(1);
+            } 
+            int s[]=new int[n];
+            for(i=0;i<n;i++){
+                s[i]=sc.nextInt();
+                if(s[i]<0){
+                    System.out.println("Invalid Input"); 
+                    System.exit(1);
+} 
+} for(i=0;i<11;i++){
+    if(i<n)
+    System.out.println(s[i]);
+    else
+    System.out.println("0"); 
+} 
+}
+}
+
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        int nb,ns,i,j;
+        Scanner sc=new Scanner(System.in);
+        nb=sc.nextInt();
+        if(nb<0){
+            System.out.println("Invalid Input"); 
+            System.exit(1);
+            } 
+            int s[]=new int[nb];
+            for(i=0;i<nb;i++){
+                s[i]=sc.nextInt();
+                if(s[i]<0){
+                    System.out.println("Invalid Input"); 
+                    System.exit(1);
+                    } 
+}
+ns=sc.nextInt();
+if(ns<0){
+    System.out.println("Invalid Input");
+    System.exit(1);
+    }
+    int w[]=new int[ns];
+    for(i=0;i<ns;i++){ 
+        w[i]=sc.nextInt();
+        if(w[i]<0){
+            System.out.println("Invalid Input");
+            System.exit(1); }}
+for(i=0;i<11;i++){ 
+    if(i<nb) 
+    System.out.println(s[i]);
+    else if((i>=nb)&&(i<11-ns))
+    System.out.println("0");
+    else{ for(j=0;j<ns;j++){
+        System.out.println(w[j]);
+        } break;
+        } }}}
+
+import java.util.*;
+public class Main{ 
+    public static void main(String args[]){ 
+        int n,i;
+        Scanner sc=new Scanner(System.in);
+        n=sc.nextInt(); 
+        if(n<0){
+            System.out.println("Invalid Input");
+            System.exit(1); 
+            
+        }
+        String s[]=new String[n]; 
+        sc.nextLine();
+        for(i=0;i<n;i++) { 
+            s[i]=sc.nextLine(); 
+}
+for(i=0;i<n;i++) { 
+    if(i==0) System.out.print("["+s[i]+", ");
+    else if(i==n-1)
+    System.out.print(s[i]+"]");
+    else System.out.print(s[i]+", "); }}}
+
+import java.util.*;
+public class Main{
+    public static void main(String args[]){ 
+        int n,i;
+        Scanner sc=new Scanner(System.in);
+        n=sc.nextInt();
+        if(n<0){ 
+            System.out.println("Invalid Input");
+            System.exit(1); 
+            
+        } 
+        String a[]=new String[n]; 
+        String b[]=new String[n];
+        int rr[]=new int[n];
+        for(i=0;i<n;i++) { 
+            sc.nextLine(); 
+            a[i]=sc.nextLine();
+            b[i]=sc.nextLine();
+            rr[i]=sc.nextInt(); 
+            if(rr[i]<0){
+                System.out.println("Invalid Input"); 
+                System.exit(1);
+                } } System.out.print("["); 
+                for(i=0;i<n;i++) 
+                { if(i==n-1)
+                System.out.print("["+a[i]+", "+b[i]+", "+rr[i]+"]");
+                else 
+                System.out.print("["+a[i]+", "+b[i]+", "+rr[i]+"],"); }
+                System.out.print("]");
+    }
+}
+
+import java.util.*;
+public class Main{ 
+    public static void main(String args[]){ 
+        int n,i;
+        Scanner sc=new Scanner(System.in);
+        n=sc.nextInt();
+        if(n<0){ 
+            System.out.println("Invalid Input"); 
+            System.exit(1);
+            }
+            int a[]=new int[n]; 
+            for(i=0;i<n;i++) {
+                a[i]=sc.nextInt(); 
+                if((a[i]>1) || (a[i]<0)){
+                    System.out.println("Invalid Input"); 
+                    System.exit(1);
+                    } }
+                    for(i=0;i<n;i++) {
+                        System.out.println(a[i]); } 
+} }
+
